@@ -1,6 +1,5 @@
 # Tienda de Ropa - Base de Datos
-**Primera parte del proyecto**
-Este es un proyecto universitario donde primero se creo una base de datos para gestionar una tienda de ropa, donde nos incluye informacion sobre marcas, los tipo de ropa, las ventas y mas.
+**Primera parte del proyecto**: Este es un proyecto universitario donde primero se creo una base de datos para gestionar una tienda de ropa, donde nos incluye informacion sobre marcas, los tipo de ropa, las ventas y mas.
 
 ## Estructura de la Base de Datos
 La base de datos esta estructurada con diferentes tablas donde guardamos informacion de nuestra tienda de ropa.
