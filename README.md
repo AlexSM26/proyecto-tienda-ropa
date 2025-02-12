@@ -1,19 +1,21 @@
 # Tienda de Ropa - Base de Datos
-
-Este proyecto es una base de datos para gestionar una tienda de ropa. Incluye información sobre marcas, prendas, clientes, ventas y más.
+**Primera parte del proyecto**
+Este es un proyecto universitario donde primero se creo una base de datos para gestionar una tienda de ropa, donde nos incluye informacion sobre marcas, los tipo de ropa, las ventas y mas.
 
 ## Estructura de la Base de Datos
+La base de datos esta estructurada con diferentes tablas donde guardamos informacion de nuestra tienda de ropa.
 
 ### Tablas:
-1. **marcas**: Información de las marcas.
-2. **prendas**: Información de las prendas.
-3. **ventas**: Registro de las ventas.
-4. **clientes**: Información sobre los clientes.
-5. **detalle_ventas**: Detalle de cada venta, con las prendas vendidas.
+1. **marcas**: Muestra la información de las marcas.
+2. **tipo_de_ropa**: Muestra la informacion del tipo de ropa.
+3. **ventas**: Muestra el registro de las ventas.
+4. **clientes**: Muestra la información sobre los clientes.
+5. **detalle_ventas**: Muestra el detalle de cada venta.
 
 ### Vistas:
+
 1. **marcas_con_ventas**: Muestra las marcas que tienen al menos una venta.
-2. **prendas_vendidas_stock**: Muestra las prendas vendidas y su stock restante.
+2. **prendas_vendidas_stock**: Muestra la cantidad de tipo de ropa vendida y su stock restante.
 3. **top_5_marcas_vendidas**: Muestra las 5 marcas más vendidas.
 
 ## Diagrama de la Base de Datos
