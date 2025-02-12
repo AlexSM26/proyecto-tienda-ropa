@@ -103,6 +103,21 @@ JOIN ventas v ON detalle_ventas.venta_id = v.id
 WHERE fecha_venta = '2023-02-02'
 GROUP BY tipo_de_ropa_id;
 
+
+-- Consultar todos los datos detalles de venta y su respectivo cliente
+SELECT 
+    c.nombre AS cliente,
+    v.fecha_venta,
+    t.nombre AS tipo_de_ropa,
+    d.cantidad,
+    d.precio_unitario
+FROM detalle_ventas d
+JOIN ventas v ON d.venta_id = v.id
+JOIN tipo_de_ropa t ON d.tipo_de_ropa_id = t.id
+JOIN clientes c ON v.id = c.id;
+
+
+
 /* Creo las vistas */
 
 -- Aqui obtengo la lista de todas las marcas que tienen al menos una venta
