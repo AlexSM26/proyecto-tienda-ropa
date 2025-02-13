@@ -4,14 +4,14 @@
 ## Estructura de la Base de Datos
 La base de datos esta estructurada con diferentes tablas donde guardamos informacion de nuestra tienda de ropa.
 
-### Tablas:
+### :calendar: Tablas:
 1. **marcas**: Muestra la información de las marcas.
 2. **tipo_de_ropa**: Muestra la informacion del tipo de ropa.
 3. **ventas**: Muestra el registro de las ventas.
 4. **clientes**: Muestra la información sobre los clientes.
 5. **detalle_ventas**: Muestra el detalle de cada venta.
 
-### Vistas:
+### :mag_right: Vistas:
 
 1. **marcas_con_ventas**: Muestra las marcas que tienen al menos una venta.
 2. **prendas_vendidas_stock**: Muestra la cantidad de tipo de ropa vendida y su stock restante.
