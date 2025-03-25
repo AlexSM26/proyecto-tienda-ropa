@@ -244,15 +244,16 @@ Respuesta
 
 **🔹 Métodos:**  
 
-- **📥 GET:** 
-- **Descripcion:**  Obtener las marcas que tienen al menos una venta
-  `GET http://localhost/proyecto/API/public/index.php/api/reportes/marcas-con-ventas`
+- **📥 GET:** Obtener las marcas que tienen al menos una venta  
+  - **Descripción:** Devuelve una lista de marcas que han registrado ventas.  
+  - **URL:** `GET http://localhost/proyecto/API/public/index.php/api/reportes/marcas-con-ventas`  
 
-- **📥 GET:** 
-- **Descripcion:**  Obtener las ropa vendida y la cantidad disponible en el stock
-  `GET http://localhost/proyecto/API/public/index.php/api/reportes/prendas-vendidas-stock`
+- **📥 GET:** Obtener las prendas vendidas y la cantidad disponible en stock  
+  - **Descripción:** Muestra cuántas unidades de cada prenda se han vendido y cuántas quedan en stock.  
+  - **URL:** `GET http://localhost/proyecto/API/public/index.php/api/reportes/prendas-vendidas-stock`  
 
-- **📥 GET:**
-- **Descripcion:**  Obtener el top 5 de las marcas mas vendidas y la cantidad vendida
-  `GET http://localhost/proyecto/API/public/index.php/api/reportes/top-5-marcas-vendidas`
+- **📥 GET:** Obtener el top 5 de marcas más vendidas y la cantidad vendida  
+  - **Descripción:** Devuelve las 5 marcas con mayor número de ventas junto con la cantidad vendida.  
+  - **URL:** `GET http://localhost/proyecto/API/public/index.php/api/reportes/top-5-marcas-vendidas`  
+
 ---
