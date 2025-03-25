@@ -1,4 +1,3 @@
-
 /* Creo la base de datos */
 CREATE DATABASE tienda_ropa;
 USE tienda_ropa;
