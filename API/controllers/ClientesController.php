@@ -25,7 +25,7 @@ class ClientesController {
     public function create() {
         $data = json_decode(file_get_contents('php://input'), true);
         $id = $this->model->create($data);
-        echo json_encode(['id' => $id]);
+        echo json_encode(['message' => 'Se ingreso un nuevo cliente de forma correcta']);
     }
 
     // Actualizar un cliente
