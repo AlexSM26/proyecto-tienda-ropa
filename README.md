@@ -256,3 +256,4 @@ Respuesta
   - **Descripción:** Devuelve las 5 marcas con mayor número de ventas junto con la cantidad vendida.  
   - **URL:** `GET http://localhost/proyecto/API/public/index.php/api/reportes/top-5-marcas-vendidas`  
 
+
