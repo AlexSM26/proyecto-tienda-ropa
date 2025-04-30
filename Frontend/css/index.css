@@ -1,0 +1,19 @@
+.navbar-custom {
+  background-color: #f8f9fa !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #000000 !important;
+}
+
+.navbar-custom .btn-outline-admin {
+  border-color: #000000;
+  color: #000000;
+}
+
+.navbar-custom .btn-outline-admin:hover {
+  background-color: rgba(0,0,0,0.05);
+}

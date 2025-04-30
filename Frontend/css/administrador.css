@@ -1,0 +1,187 @@
+/* styles.css */
+:root {
+    --primary-color: #2c3e50;
+    --primary-light: #3d566e;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --info-color: #17a2b8;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --dark-color: #343a40;
+    --light-gray: #f8f9fa;
+    --medium-gray: #e9ecef;
+    --dark-gray: #6c757d;
+    --white: #ffffff;
+    --black: #212529;
+    --border-radius: 0.5rem;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+}
+
+
+
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--light-gray);
+    color: var(--black);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 0;
+}
+
+.navbar.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand i {
+    font-size: 1.5rem;
+}
+
+.btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.3);
+    transition: var(--transition);
+}
+
+.btn-outline-light:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+    border-color: var(--white);
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.card.border-0 {
+    border: 0 !important;
+}
+
+.shadow-sm {
+    box-shadow: var(--box-shadow);
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Admin Icons */
+.admin-icon, .icon-admin {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.admin-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.icon-admin {
+    width: 60px;
+    height: 60px;
+}
+
+/* Background Gradients */
+.bg-gradient {
+    background: linear-gradient(135deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+}
+
+/* Alert */
+.alert {
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+.alert-info {
+    background-color: rgba(23, 162, 184, 0.1);
+    color: var(--info-color);
+}
+
+/* Section Cards */
+.card-body h3 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.text-muted {
+    color: var(--dark-gray) !important;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer h5 {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+footer .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+    
+    .card-body {
+        padding: 1.5rem;
+    }
+    
+    .admin-icon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Delay animations for grid items */
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+

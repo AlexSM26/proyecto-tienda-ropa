@@ -1,0 +1,23 @@
+.admin-navbar {
+    background-color: #2c3e50;
+    height: 50px; /* Altura reducida */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem; /* Texto más pequeño */
+    padding: 0.25rem 0; /* Padding reducido */
+}
+
+.navbar-brand:hover {
+    color: #3498db;
+}
+
+.bi-arrow-left {
+    margin-right: 6px;
+    font-size: 1rem; /* Icono más pequeño */
+}

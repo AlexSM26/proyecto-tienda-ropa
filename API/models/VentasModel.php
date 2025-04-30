@@ -9,7 +9,19 @@ class VentasModel {
 
     // Obtener todas las ventas
     public function getAll() {
-        $query = $this->db->query("SELECT * FROM ventas");
+        // Validar conexión a la base de datos
+        if (!$this->db) {
+            throw new Exception("Error de conexión a la base de datos");
+        }
+
+        $query = $this->db->query("SELECT id, fecha_venta FROM ventas ORDER BY fecha_venta DESC");
+        
+        // Verificar si la consulta fue exitosa
+        if ($query === false) {
+            $errorInfo = $this->db->errorInfo();
+            throw new Exception("Error en la consulta: " . $errorInfo[2]);
+        }
+
         return $query->fetchAll(PDO::FETCH_ASSOC);
     }
 

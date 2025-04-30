@@ -11,9 +11,34 @@ class VentasController {
 
     // Obtener todas las ventas
     public function getAll() {
-        $data = $this->model->getAll();
-        echo json_encode($data);
+        try {
+            $ventas = $this->model->getAll();
+            
+            // Verificar que los datos no estén vacíos
+            if (empty($ventas)) {
+                throw new Exception("No hay ventas registradas");
+            }
+            
+            // Establecer el tipo de contenido como JSON
+            header('Content-Type: application/json');
+            
+            // Devolver los datos con estructura consistente
+            echo json_encode([
+                'success' => true,
+                'data' => $ventas,
+                'count' => count($ventas)
+            ]);
+            
+        } catch (Exception $e) {
+            // Manejo de errores
+            header('HTTP/1.1 500 Internal Server Error');
+            echo json_encode([
+                'success' => false,
+                'error' => $e->getMessage()
+            ]);
+        }
     }
+
 
     // Obtener una venta por ID
     public function getById($id) {
